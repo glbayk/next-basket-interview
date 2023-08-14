@@ -49,7 +49,7 @@ Create two microservices communicating through message bus. Code must be covered
 ## How to run
 
 1. Run `composer install` in both user and notification microservices.
-2. Run `docker-compose up --build -d` in the root entry-point directory.
+2. Run `docker-compose up --build -d` in the root `entry-point` directory.
 3. Inside the user microservice container run `php artisan migrate --fresh`.
 4. Inside the notification microservice container run `php app:consume-user-command`.
 
